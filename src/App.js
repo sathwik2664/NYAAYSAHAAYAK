@@ -28,6 +28,7 @@ import Chatbot2 from './components/Chatbot/Chatbot';
 
 
 function App() {
+  console.log(localStorage.getItem("userId"));
 
 
   return (

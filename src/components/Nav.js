@@ -199,11 +199,9 @@ const MyNav = () => {
               </li>
               {localStorage.getItem("userId") ? ( 
                 <>
-                  <li className="nav-item illie">
+                  <li className="nav-item">
                   <Link  to="/">
-                    <div className="nav-link active dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                      Logout
-                    </div>
+                  <button class="button10" onClick={()=>{localStorage.removeItem("userId")}} ><i class="fa fa-sign-out"></i> <Login/> Logout</button>
                     </Link>
                   </li>
                 </>
